@@ -79,6 +79,47 @@ p {
     padding: 10px;
 }
 
+/* CODIGO PARA BOTON DE WHATSAPP */
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  .whatsapp-logo {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .whatsapp-logo img {
+    width: 60px;
+    height: auto;
+    transition: filter 0.3s ease;
+  }
+  
+  .tooltip {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    transform: translateX(-50%);
+    background-color: #DAA520;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .whatsapp-container:hover .whatsapp-logo img {
+    filter: brightness(0.8);
+  }
+  
+  .whatsapp-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  /* FIN DEL CÓDIGO PARA BOTÓN DE WHATSAPP*/
 
 /*NOSOTROS*/
 .nosotros {
