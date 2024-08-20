@@ -95,6 +95,27 @@ p {
     color: #BB3232;
 }
 
+/* Efecto de desvanecimiento 2da card nosotros*/
+.fade-out {
+    animation: fadeOut 1s ease-out forwards;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in forwards;
+}
+
+/* Animaciones */
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Redes sociales - Nosotros y footer */
 .social-icons {
     display: flex;
     justify-content: center;
