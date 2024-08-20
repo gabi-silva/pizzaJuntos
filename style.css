@@ -47,15 +47,21 @@ body {
 }
 
 
-/* Estilos para los títulos */
+/* Estilos para letras */
 h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700; /* Roboto Bold */
-    font-size: 40px;
+    font-size: 48px;
     color: #4f4f4f;
 }
 
 h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600; /* Roboto SemiBold */
+    font-size: 40px;
+}
+
+h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 600; /* Roboto SemiBold */
     font-size: 24px;
@@ -69,12 +75,17 @@ p {
     font-size: 16px;
 }
 
+li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
 /* Estilo Secciones */
 .titulo-seccion {
     background-color: #DAA520;
 }
 
-.titulo-seccion h1 {
+.titulo-seccion h2 {
     color: #000;
     padding: 10px;
 }
@@ -128,7 +139,7 @@ p {
     border: none;
 }
 
-.nosotros h1 {
+.nosotros h2 {
     color: #571C28;
 }
 
@@ -168,8 +179,8 @@ p {
     text-decoration: none;
     color: #fff;
     background-color: #333;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,11 +190,11 @@ p {
 
 .social-icons a:hover {
     transform: scale(1.2);
-    background-color: #BB3232;
+    background-color: #DAA520;
 }
 
 .social-icons i {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 /* SERVICIOS */
@@ -324,15 +335,14 @@ p {
     display: flex;
     align-items: center;
     gap: 15px;
-    font-weight: bold;
 }
 
 .payment-icons i {
-    font-size: 30px; /* Puedes ajustar el tamaño del ícono */
+    font-size: 20px; /* Puedes ajustar el tamaño del ícono */
     background-color: #DAA520; /* Fondo amarillo */
     color: #333; /* Color del ícono */
-    width: 60px; /* Ajusta el tamaño del círculo */
-    height: 60px;
+    width: 40px; /* Ajusta el tamaño del círculo */
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -343,7 +353,6 @@ p {
 
 .payment-icons i:hover {
     transform: scale(1.2); /* Agranda el círculo al pasar el mouse */
-    background-color: #FFAA00; /* Cambia el fondo al hacer hover */
 }
 
 
@@ -366,14 +375,26 @@ p {
     h1 {
         font-family: 'Roboto', sans-serif;
         font-weight: 700; /* Roboto Bold */
-        font-size: 24px;
+        font-size: 30px;
         color: #4f4f4f;
     }
 
     h2 {
         font-family: 'Roboto', sans-serif;
         font-weight: 600; /* Roboto SemiBold */
-        font-size: 20px;
+        font-size: 24px;
+    }
+
+    h3 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600; /* Roboto SemiBold */
+        font-size: 18px;
+    }
+
+    h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
     }
 
     /* Estilos para los párrafos */

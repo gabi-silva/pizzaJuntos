@@ -1,10 +1,31 @@
+// Cierra el menú al hacer clic en cualquier enlace de navegación
+document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+  link.addEventListener('click', function() {
+    document.querySelector('.navbar-collapse').classList.remove('show');
+  });
+});
+
+// Cierra el menú al hacer clic en cualquier parte fuera del menú
+document.addEventListener('click', function(event) {
+  const navbarCollapse = document.querySelector('.navbar-collapse');
+  const isClickInside = navbarCollapse.contains(event.target);
+  const isMenuToggle = event.target.closest('.navbar-toggler');
+
+  // Si haces clic fuera del menú o vuelves a tocar el botón de menú
+  if (!isClickInside || isMenuToggle) {
+    navbarCollapse.classList.remove('show');
+  }
+});
+
 // Array de imágenes
 const images = [
-  './img/nosotros/mozos01.png',
+  './img/nosotros/mozos01.jpg',
   './img/nosotros/mozos02.jpg',
   './img/nosotros/mozos03.jpg',
   './img/nosotros/mozos04.jpg',
-  './img/nosotros/mozos05.jpg'
+  './img/nosotros/mozos05.jpg',
+  './img/nosotros/mozos06.jpg',
+  './img/nosotros/mozos07.jpg'
 ];
 
 const imgElement = document.getElementById('dynamic-image');
@@ -26,7 +47,7 @@ function changeImage() {
 }
 
 // Cambiar la imagen cada 5 segundos
-setInterval(changeImage, 5000);
+setInterval(changeImage, 3000);
 
 
 document.getElementById('whatsappForm').addEventListener('submit', function(e) {
