@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Juntos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <!--NAVBAR: logo. Menú: inicio nosotros servicio  contacto galeria-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand logo-grande" href="#inicio">
+                    <img src="./img/Logos/mozo_pizzaJuntos.png" alt="Logo" width="70">
+                </a>
+                
+                <a class="navbar-brand logo-grande" href="#inicio">
+                    <img src="./img/Logos/pizzaJuntos_blanco_nuevo.png" alt="Logo" width="150">
+                </a>
+        
+                <a class="navbar-brand logo-pequeno" href="#inicio">
+                    <img src="./img/Logos/logo-redondo.png" alt="Logo" width="35">
+                </a>
+                <!-- Botón del menú hamburguesa -->
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menú colapsable -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">CONTACTO</a>
+                        </li>
+                        <!--
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria">GALERÍA</a>
+                        </li>
+                        -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    
+    
+  <main>
+    <!--Contenido principal de la pagina en secciones:
+        portada nosotros, productos [intro, principales, entradas, extras], contacto 
+        [medios de pago y contacto, presupuesto
+    -->
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <!--Portada de inicio-->
+        <div class="portada-container">
+            <img src="./img/portada_inicio.jpg" class="img-fluid portada-imagen" alt="Pizza">
+        </div>
+        <div class="container titulo text-center p-4">
+            <h1>BIENVENIDOS A </h1>
+            <img src="./img/Logos/pizzaJuntos.png" class="img-fluid" alt="logo" width="40%">
+        </div>
+    </section>        
+    
+    <!-- SECCION NOSOTROS -->
+    <section id="nosotros" class="container">
+      <div class="nosotros card shadow mb-4" data-aos="fade-right">
+        <div class="row g-0">
+          <div class="col-md-4 p-4">
+            <img src="./img/nosotros/nosotros01.jpg" class="img-fluid rounded" alt="Foto Ezequiel y Gabriela">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body text-center p-4">
+              <h1>SOBRE NOSOTROS</h1><hr>
+              <p>
+                En <strong>Pizza Juntos</strong>, nos especializamos en catering de pizzas a la parrilla desde 2014. 
+                Nuestra excelencia en la calidad se refleja en nuestra masa casera, preparada por nuestro chef, 
+                y en el sabor único que logramos con nuestra técnica de cocción.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nosotros container card shadow mb-4" data-aos="fade-left">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body text-center p-4">
+              <h1>¿POR QUÉ ELEGIRNOS?</h1><hr>
+              <p>
+                Con más de 1000 eventos organizados, en Ciudad de Córdoba y alrededores, nos enorgullecemos de brindar atención personalizada y 
+                destacarnos en la calidad de nuestro producto.
+              </p>
+              <p>Nuestro equipo de mozos capacitados y excelentes se traslada al lugar de tu evento, 
+                garantizando una experiencia inolvidable. En <strong>Pizza Juntos</strong>, nos esforzamos por hacer que cada 
+                evento sea especial, confía en nosotros para tus reuniones y disfruta sin preocupaciones.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 p-4">
+            <img src="./img/nosotros/mozos01.png" class="img-fluid rounded" alt="Foto Ezequiel y Gabriela">
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center mt-5">
+        <hr>
+        <h2>Síguenos en nuestras redes sociales</h2>
+        <div class="social-icons">
+            <a href="https://wa.me/543544619403" target="_blank" class="whatsapp" aria-label="WhatsApp">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/pizzajuntos" target="_blank" class="instagram" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/pizzajuntos" target="_blank" class="facebook" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+        </div>
+        <hr>
+    </div>
+
+    </section>
+
+    <!-- SECCION PRODUCTOS Y SERVICIO -->
+    <section id="servicios"> 
+      <div class="servicios">
+        <div class="container servicios-body text-center">
+          <h2>PRODUCTOS Y SERVICIOS</h2> <hr>
+          <p>Disfruta la excelencia en tus eventos. Nuestro catering ofrece 12 variedades de pizzas gourmet, 
+              entradas y adicionales seleccionados con cuidado. </p>
+          <p>Masa casera, materia prima de calidad y el toque especial que le brinda la parrilla. </p>
+          <p>Descubre cómo podemos hacer de tu evento un momento único.</p>
+        </div>
+      </div>
+
+      <!-- PRINCIPALES: 2 cards -->
+      <div class="principales">
+        <div class="titulo-seccion text-center">
+          <h1>PRINCIPALES</h1>
+        </div>
+        <div class="subtitulo-servicio text-center m-5">
+          <h4>Tenés dos opciones para <strong>DELEITAR TU PALADAR</strong> vos elegís:</h4>
+        </div>
+        <!-- cards -->
+        <div class="container text-center">
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-6 mb-4">
+              <h3 class="opciones m-5 mt-1">OPCIÓN 1</h3>
+              <div class="tarjeta">
+                <div class="front" style="background-image: url('./img/servicios/opcion01.png'); background-size: cover; background-position: center;">
+                  <h3>9 VARIEDADES</h3>
+                </div>
+                <div class="back">
+                  <h3>9 VARIEDADES</h3>
+                  <ul class="list">
+                    <li>Muzzarella</li>
+                    <li>Jamón y morrón</li>
+                    <li>Calabresa</li>
+                    <li>Huevo</li>
+                    <li>Napolitana</li>
+                    <li>Fugazetta</li>
+                    <li>Roquefort</li>
+                    <li>Ananá y azucar negra</li>
+                    <li>Rúcula, crudo y parmesano</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-6 mb-4">
+              <h3 class="opciones m-5 mt-1">OPCIÓN 2</h3>
+              <div class="tarjeta">
+                <div class="front" style="background-image: url('./img/servicios/opcion02.png'); background-size: cover; background-position: center;">
+                  <h3>12 VARIEDADES</h3>
+                </div>
+                <div class="back">
+                  <h3>12 VARIEDADES</h3>
+                  <ul class="list">
+                    <li>Muzzarella</li>
+                    <li>Jamón y morrón</li>
+                    <li>Calabresa</li>
+                    <li>Huevo</li>
+                    <li>Napolitana</li>
+                    <li>Fugazetta</li>
+                    <li>Roquefort y cerezas</li>
+                    <li>Ananá y azucar negra</li>
+                    <li>Palmitos con salsa golf</li>
+                    <li>Rúcula, crudo y parmesano</li>
+                    <li>Ratatoille</li>
+                    <li>Champignon</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="otros m-4">
+            <h4>OTROS: Opción de Pizzas Veganas y sin TACC</h4>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ENTRADAS: 4 cards -->
+      <div class="entradas">                
+        <div class="titulo-seccion text-center">
+            <h1>ENTRADAS</h1>                
+        </div>
+        <div class="subtitulo-servicio text-center m-5">
+          <h4>Acompaña las <strong>PIZZAS MÁS RICAS</strong> con el sabor único de nuestras <strong>ENTRADAS</strong>.</h4>
+        </div>
+        <div class="container text-center">
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+              <div class="tarjeta">
+                <div class="front" style="background-image: url('./img/servicios/campo.png'); background-size: cover; background-position: center;">
+                  <h3>TABLA DE CAMPO</h3>
+                </div>
+                <div class="back">
+                  <h3>TABLA DE CAMPO</h3>
+                  <ul class="list">
+                    <li>Jamón horneado</li>
+                    <li>Bondiola</li>
+                    <li>Salame colonial</li>
+                    <li>Mortadela</li>
+                    <li>Queso saborizado</li>
+                    <li>Queso fymbo</li>
+                    <li>Aceitunas</li>
+                    <li>Aderezo y pan casero</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+              <div class="tarjeta">
+                <div class="front" style="background-image: url('./img/servicios/crespon.png'); background-size: cover; background-position: center;">
+                  <h3>TABLA CRESPÓN</h3>
+                </div>
+                <div class="back">
+                  <h3>TABLA CRESPÓN</h3>
+                  <ul class="list">
+                    <li>Salame colonial</li>
+                    <li>Queso fymbo</li>
+                    <li>Aderezo casero</li>
+                    <li>Pan casero</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+              <div class="tarjeta">
+                <div class="front" style="background-image: url('./img/servicios/bruschettas.png'); background-size: cover; background-position: center;">
+                  <h3>BRUSCHETTAS</h3>
+                </div>
+                <div class="back">
+                  <h3>BRUSCHETTAS</h3>
+                  <ul class="list">
+                    <li>Pasta de olivas negras</li>
+                    <li>Roquefort y nuez</li>
+                    <li>Escabeche de berenjenas</li>
+                    <li>Confit de tomates</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+              <div class="tarjeta">
+                <div class="front" style="background-image: url('./img/servicios/vegana.png'); background-size: cover; background-position: center;">
+                  <h3>TABLA VEGANA</h3>
+                </div>
+                <div class="back">
+                  <h3>TABLA VEGANA</h3>
+                  <ul class="list">
+                    <li>Escabeche de berenjenas</li>
+                    <li>Pasta de remolacha</li>
+                    <li>Mayonesa de zanahorias</li>
+                    <li>Tomates cherry</li>
+                    <li>Aceitunas rellenas</li>
+                    <li>Nachos</li>
+                    <li>Maní saborizado</li>
+                    <li>Bastones de zanahoria</li>
+                    <li>Pan casero</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARRUSEL EVENTOS -->
+
+      
+        
+      <!-- ADICIONALES: 4 cards -->
+      <div class="adicionales">
+        <div class="titulo-seccion text-center">
+          <h1>ADICIONALES</h1>
+        </div>
+        <div class="subtitulo-servicio text-center m-5">
+          <h4>Puedes sumar a tu evento el <strong>SABOR</strong> de la <strong>CARNE</strong>. <br>
+            Te ofrecemos los siguientes <strong>ADICIONALES</strong>:</h4>
+        </div>
+      </div>
+          
+      <!-- cards -->
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6 col-md-3 mb-4">
+            <div class="tarjeta">
+              <div class="front" style="background-image: url('./img/servicios/cerdo.png'); background-size: cover; background-position: center;">
+                <h3>PATA DE CERDO</h3>
+              </div>
+              <div class="back">
+                <h3>PATA DE CERDO</h3>
+                <ul class="list">
+                  <li><strong>5 VARIEDADES DE SALSAS:</strong></li>
+                  <li>Criolla</li>
+                  <li>Mayonesa</li>
+                  <li>Crema de zanahoria</li>
+                  <li>Crema de roquefort</li>
+                  <li>Escabeche de berenjenas</li> <br>
+                  <li>Tomate y lechuga</li><br>
+                  <li><strong>5 panes por persona</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 mb-4">
+            <div class="tarjeta">
+              <div class="front" style="background-image: url('./img/servicios/cerdo.png'); background-size: cover; background-position: center;">
+                <h3>PATA DE TERNERA</h3>
+              </div>
+              <div class="back">
+                <h3>PATA DE TERNERA</h3>
+                <ul class="list">
+                  <li><strong>5 VARIEDADES DE SALSAS:</strong></li>
+                  <li>Criolla</li>
+                  <li>Mayonesa</li>
+                  <li>Crema de zanahoria</li>
+                  <li>Crema de roquefort</li>
+                  <li>Escabeche de berenjenas</li> <br>
+                  <li>Tomate y lechuga</li><br>
+                  <li><strong>5 panes por persona</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 mb-4">
+            <div class="tarjeta">
+              <div class="front" style="background-image: url('./img/servicios/bondiola.png'); background-size: cover; background-position: center;">
+                <h3>BONDIOLA DESMECHADA</h3>
+              </div>
+              <div class="back">
+                <h3>BONDIOLA DESMECHADA</h3>
+                <ul class="list">
+                  <li><strong>5 VARIEDADES DE SALSAS:</strong></li>
+                  <li>Criolla</li>
+                  <li>Mayonesa</li>
+                  <li>Crema de zanahoria</li>
+                  <li>Crema de roquefort</li>
+                  <li>Escabeche de berenjenas</li> <br>
+                  <li>Tomate y lechuga</li><br>
+                  <li><strong>5 panes por persona</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 mb-4">
+            <div class="tarjeta">
+              <div class="front" style="background-image: url('./img/servicios/cerdo.png'); background-size: cover; background-position: center;">
+                <h3>OSOBUCO BRASEADO</h3>
+              </div>
+              <div class="back">
+                <h3>OSOBUCO BRASEADO</h3>
+                <ul class="list">
+                  <li><strong>5 VARIEDADES DE SALSAS:</strong></li>
+                  <li>Criolla</li>
+                  <li>Mayonesa</li>
+                  <li>Crema de zanahoria</li>
+                  <li>Crema de roquefort</li>
+                  <li>Escabeche de berenjenas</li> <br>
+                  <li>Tomate y lechuga</li><br>
+                  <li><strong>5 panes por persona</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="otros m-4">
+          <h4>OTROS: Servicio de bebidas y Alquiler de parrilla</h4>
+        </div>
+      </div>        
+    </section>
+        
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto">
+      <div class="titulo-seccion text-center">
+        <h1>CONTACTO</h1>
+      </div>
+      <div class="subtitulo-servicio text-center m-5">
+        <h3>
+          Contáctanos para tener <strong>EL MEJOR CATERING</strong> en tu <strong>EVENTO</strong>
+        </h3>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="form-container">
+              <h2 class="text-center">Solicita tu presupuesto</h2> <hr>
+              <form id="whatsappForm">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="name" required>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                      <label for="phone" class="form-label">Teléfono</label>
+                      <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                      <label for="guests" class="form-label">Cantidad de invitados</label>
+                      <input type="number" class="form-control" id="guests" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                      <label for="ubicacion" class="form-label">Ubicación del evento</label>
+                      <input type="text" class="form-control" id="ubicacion" required>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                      <label for="fecha" class="form-label">Fecha del evento</label>
+                      <input type="date" class="form-control" id="fecha" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="mb-3">
+                      <label for="mensaje" class="form-label">Mensaje</label>
+                      <textarea name="mensaje" class="form-control" id="mensaje" rows="4" required></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-warning w-100">Enviar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="p-3 bg-light medios-pago border shadow">
+              <h2 class="mx-4"><img class="me-4" src="./img/Logos/mozo_pizzaJuntos.png" alt="icono mozo" style="width: 100px;">MEDIOS DE PAGO</h2>
+              <hr>
+              <ul class="payment-icons">
+                <li><i class="bi bi-cash"></i> Contado/Efectivo</li>
+                <li><i class="bi bi-bank"></i> Transferencia bancaria</li>
+                <li><i class="bi bi-credit-card"></i> Tarjetas de débito y crédito</li>
+              </ul>
+              <hr><h2 class="mt-5" style="margin-left: 150px;">UBICACIÓN</h2>
+              <ul class="payment-icons">
+                <li><i class="bi bi-pin"></i> Ciudad de Córdoba, Argentina</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+  </main>
+
+  <footer class="p-5 bg-light border-top">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="container text-center">
+          <div class="container text-center">
+            <ul class="list-unstyled">
+              <li> <img src="./img/Logos/pizzaJuntos.png" alt="" style="width: 200px;"></li>  <hr>
+              <li><a href="condiciones.html" target="_blank" class="text-decoration-none">Metodología y Condiciones de Servicio</a></li>
+            </ul>
+        </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="container text-center">
+          <h2>Síguenos en nuestras redes sociales</h2>
+          <div class="social-icons">
+            <a href="https://wa.me/543544619403" target="_blank" class="whatsapp" aria-label="WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/pizzajuntos" target="_blank" class="instagram" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/pizzajuntos" target="_blank" class="facebook" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>    
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS & Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./script.js"></script>
+</body>
+</html>
