@@ -79,7 +79,13 @@ li {
     border-radius: 4px;
 }
 
+.navbar-nav .dropdown-menu {
+    background-color: #EBECEC; /* Color de fondo del menú desplegable */
+}
 
+.navbar-nav .dropdown-item:hover {
+    background-color: #ffc107; /* Color de fondo cuando pasas el mouse por encima */
+}
 
 /* CODIGO PARA BOTON DE WHATSAPP */
 .whatsapp-container {
@@ -152,24 +158,10 @@ li {
     color: #BB3232;
 }
 
-/* Efecto de desvanecimiento 2da card nosotros*/
-.fade-out {
-    animation: fadeOut 1s ease-out forwards;
-}
-
-.fade-in {
-    animation: fadeIn 1s ease-in forwards;
-}
-
-/* Animaciones */
-@keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+/* MISION VISION Y VALORES */
+.btn-warning {
+    font-weight: bold;
+    background-color: #DAA520;
 }
 
 /* Redes sociales - Nosotros y footer */
@@ -310,13 +302,18 @@ li {
 .carrusel {
     background-color: #EBECEC;
     color: #4f4f4f;
-    border: none;
     justify-content: center;
     align-items: center;
+    border: none;
+    border-radius: none;
 }
 
 .carrusel-izq {
     padding-top: 100px;
+}
+
+.carousel-item img {
+    border-radius: 15px;
 }
 
 /* SECCION CONTACTO */

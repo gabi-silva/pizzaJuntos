@@ -4,56 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Juntos</title>
+    <link rel="icon" href="./img/Logos/logo-redondo.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <!--NAVBAR: logo. Menú: inicio nosotros servicio  contacto galeria-->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <a class="navbar-brand logo-grande" href="#inicio">
-                    <img src="./img/Logos/mozo_pizzaJuntos.png" alt="Logo" width="70">
+  <header>
+    <!--NAVBAR: logo. Menú: inicio nosotros servicio contacto galeria-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+          <a class="navbar-brand logo-grande" href="#inicio">
+            <img src="./img/Logos/mozo_pizzaJuntos.png" alt="Logo" width="70">
+          </a>
+          
+          <a class="navbar-brand logo-grande" href="#inicio">
+            <img src="./img/Logos/pizzaJuntos_blanco_nuevo.png" alt="Logo" width="150">
+          </a>
+  
+          <a class="navbar-brand logo-pequeno" href="#inicio">
+            <img src="./img/Logos/logo-redondo.png" alt="Logo" width="35">
+          </a>
+          <!-- Botón del menú hamburguesa -->
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Menú colapsable -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#inicio">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#nosotros">NOSOTROS</a>
+              </li>
+              <!-- Dropdown para Servicios -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SERVICIOS
                 </a>
-                
-                <a class="navbar-brand logo-grande" href="#inicio">
-                    <img src="./img/Logos/pizzaJuntos_blanco_nuevo.png" alt="Logo" width="150">
-                </a>
-        
-                <a class="navbar-brand logo-pequeno" href="#inicio">
-                    <img src="./img/Logos/logo-redondo.png" alt="Logo" width="35">
-                </a>
-                <!-- Botón del menú hamburguesa -->
-                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Menú colapsable -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#inicio">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#nosotros">NOSOTROS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#servicios">SERVICIOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contacto">CONTACTO</a>
-                        </li>
-                        <!--
-                        <li class="nav-item">
-                            <a class="nav-link" href="#galeria">GALERÍA</a>
-                        </li>
-                        -->
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#principales">Principales</a></li>
+                  <li><a class="dropdown-item" href="#entradas">Entradas</a></li>
+                  <li><a class="dropdown-item" href="#adicionales">Adicionales</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">CONTACTO</a>
+              </li>
+              <!--
+              <li class="nav-item">
+                <a class="nav-link" href="#galeria">GALERÍA</a>
+              </li>
+              -->
+            </ul>
+        </div>
+      </div>
+    </nav>
+  </header>    
     
     
   <main>
@@ -102,48 +110,116 @@
 
       <div class="nosotros container card shadow mb-4">
         <div class="row g-0">
-          <div class="col-md-8">
-            <div class="card-body text-center p-4">
-              <h2>¿POR QUÉ ELEGIRNOS?</h2><hr>
-              <p>
-                Con más de 1000 eventos organizados, en Ciudad de Córdoba y alrededores, nos enorgullecemos de brindar atención personalizada y 
-                destacarnos en la calidad de nuestro producto.
-              </p>
-              <p>Nuestro equipo de mozos capacitados y excelentes se traslada al lugar de tu evento, 
-                garantizando una experiencia inolvidable. En <strong>Pizza Juntos</strong>, nos esforzamos por hacer que cada 
-                evento sea especial, confía en nosotros para tus reuniones y disfruta sin preocupaciones.
-              </p>
+            <div class="col-md-8">
+                <div class="card-body text-center p-4">
+                    <h2>¿POR QUÉ ELEGIRNOS?</h2><hr>
+                    <p>
+                        Con más de 1000 eventos organizados, en Ciudad de Córdoba y alrededores, nos enorgullecemos de brindar atención personalizada y 
+                        destacarnos en la calidad de nuestro producto.
+                    </p>
+                    <p>Nuestro equipo de mozos capacitados y excelentes se traslada al lugar de tu evento, 
+                        garantizando una experiencia inolvidable. En <strong>Pizza Juntos</strong>, nos esforzamos por hacer que cada 
+                        evento sea especial, confía en nosotros para tus reuniones y disfruta sin preocupaciones.
+                    </p>
+                </div>
             </div>
+            <div class="col-md-4 p-4">
+                <div id="carouselNosotros" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./img/nosotros/mozos01.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/nosotros/mozos02.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/nosotros/mozos03.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/nosotros/mozos04.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/nosotros/mozos05.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/nosotros/mozos06.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/nosotros/mozos07.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselNosotros" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselNosotros" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>             
+            </div>
+        </div>
+    </div>
+      
+      <!-- Sección de misión, visión y valores - en botón, breve -->
+      <div class="container card nosotros botones-nosotros shadow p-4 text-center">
+        <h3 class="mb-3">CONOCENOS MÁS: </h3>
+        <p class="d-grid gap-2"> <!-- Aquí aplicamos las clases responsivas -->
+          <a class="btn btn-warning mb-1" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+            MISIÓN
+          </a>
+        </p>
+        <div class="collapse" id="collapseExample1">
+          <div class="card card-body mb-4">
+            Contenido para la sección de misión. Este panel está oculto por defecto, pero se muestra cuando el usuario activa el botón correspondiente.
           </div>
-          <div class="col-md-4 p-4">
-            <img id="dynamic-image" src="./img/nosotros/mozos01.jpg" class="img-fluid rounded" alt="Fotos aleatorio del equipo">
+        </div>
+        <p class="d-grid gap-2">
+          <a class="btn btn-warning mb-1" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+            VISIÓN
+          </a>
+        </p>
+        <div class="collapse" id="collapseExample2">
+          <div class="card card-body mb-4">
+            Contenido para la sección de visión. Este panel está oculto por defecto, pero se muestra cuando el usuario activa el botón correspondiente.
+          </div>
+        </div>
+        <p class="d-grid gap-2">
+          <a class="btn btn-warning mb-1" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+            VALORES
+          </a>  
+        </p>
+        <div class="collapse" id="collapseExample3">
+          <div class="card card-body mb-4">
+            Contenido para la sección de valores. Este panel está oculto por defecto, pero se muestra cuando el usuario activa el botón correspondiente.
           </div>
         </div>
       </div>
-      
 
+
+      <!-- Sección de redes sociales (pequeño) -->
       <div class="container text-center mt-5">
         <hr>
-        <h3>Síguenos en nuestras redes sociales</h3>
+        <h3>SÍGUENOS EN NUESTRAS REDES SOCIALES</h3>
         <div class="social-icons">
-            <a href="https://wa.me/543544619403" target="_blank" class="whatsapp" aria-label="WhatsApp">
-                <i class="bi bi-whatsapp"></i>
-            </a>
-            <a href="https://www.instagram.com/pizzajuntos" target="_blank" class="instagram" aria-label="Instagram">
-                <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/pizzajuntos" target="_blank" class="facebook" aria-label="Facebook">
-                <i class="bi bi-facebook"></i>
-            </a>
-            <a href="mailto:pizzajuntoscba@gmail.com" class="email" aria-label="email">
-              <i class="bi bi-envelope"></i>
-            </a>
-            <a href="https://maps.app.goo.gl/beDFXjdhnkeyYJoD9" target="_blank" class="google" aria-label="Google Reviews">
-              <i class="bi bi-google"></i>
-            </a>
+          <a href="https://wa.me/543544619403" target="_blank" class="whatsapp" aria-label="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/pizzajuntos" target="_blank" class="instagram" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/pizzajuntos" target="_blank" class="facebook" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="mailto:pizzajuntoscba@gmail.com" class="email" aria-label="email">
+            <i class="bi bi-envelope"></i>
+          </a>
+          <a href="https://maps.app.goo.gl/beDFXjdhnkeyYJoD9" target="_blank" class="google" aria-label="Google Reviews">
+            <i class="bi bi-google"></i>
+          </a>
         </div>
         <hr>
-    </div>
+      </div>
 
     </section>
 
@@ -160,7 +236,7 @@
       </div>
 
       <!-- PRINCIPALES: 2 cards -->
-      <div class="principales">
+      <div class="principales" id="principales">
         <div class="titulo-seccion text-center">
           <h2>PRINCIPALES</h2>
         </div>
@@ -226,7 +302,7 @@
 
 
       <!-- ENTRADAS: 4 cards -->
-      <div class="entradas">                
+      <div class="entradas" id="entradas">                
         <div class="titulo-seccion text-center">
             <h2>ENTRADAS</h2>                
         </div>
@@ -315,69 +391,63 @@
       <!-- CARRUSEL EVENTOS -->
       <div class="carrusel container-fluid card shadow mb-4 my-5">
         <div class="row container g-0">
-          <div class="col-md-6">
-            <div class="card-body carrusel-izq text-center">
-              <h3>Te mostramos alguno de nuestros EVENTOS</h3>
-              <div class="logo-carrusel">
-                <img src="./img/Logos/logo-sin-fondo.png" alt="" style="width: 70%;">
-              </div>
+            <div class="col-md-6">
+                <div class="card-body carrusel-izq text-center">
+                    <h3>Te mostramos alguno de nuestros EVENTOS</h3>
+                    <div class="logo-carrusel">
+                        <img src="./img/Logos/logo-sin-fondo.png" alt="" style="width: 70%;">
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6 p-4">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="./img/carrusel-eventos/pequeñas/primera.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="./img/carrusel-eventos/pequeñas/evento02.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="./img/carrusel-eventos/pequeñas/evento03.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item active">
-                  <img src="./img/carrusel-eventos/pequeñas/evento04.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="./img/carrusel-eventos/pequeñas/evento06.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="./img/carrusel-eventos/pequeñas/evento09.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item active">
-                  <img src="./img/carrusel-eventos/pequeñas/evento10.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="./img/carrusel-eventos/pequeñas/evento11.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="./img/carrusel-eventos/pequeñas/evento12.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item active">
-                  <img src="./img/carrusel-eventos/pequeñas/evento13.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="./img/carrusel-eventos/pequeñas/evento14.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="./img/carrusel-eventos/pequeñas/evento15.png" class="d-block w-100" alt="...">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>          
-          </div>
+            <div class="col-md-6 p-4">
+                <div id="carouselEventos" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./img/carrusel-eventos/pequeñas/evento01.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/carrusel-eventos/pequeñas/evento02.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/carrusel-eventos/pequeñas/evento03.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/carrusel-eventos/pequeñas/evento04.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/carrusel-eventos/pequeñas/evento05.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/carrusel-eventos/pequeñas/evento06.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/carrusel-eventos/pequeñas/evento07.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/carrusel-eventos/pequeñas/evento08.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/carrusel-eventos/pequeñas/evento09.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/carrusel-eventos/pequeñas/evento10.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselEventos" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselEventos" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>          
+            </div>
         </div>
-      </div>
+    </div>
 
       <!-- ADICIONALES: 4 cards -->
-      <div class="adicionales">
+      <div class="adicionales" id="adicionales">
         <div class="titulo-seccion text-center">
           <h2>ADICIONALES</h2>
         </div>
