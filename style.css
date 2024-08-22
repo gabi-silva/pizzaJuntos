@@ -5,6 +5,39 @@ body {
     padding: 0;
 }
 
+/* Estilos para textos */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Roboto Bold */
+    font-size: 48px;
+    color: #4f4f4f;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600; /* Roboto SemiBold */
+    font-size: 40px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600; /* Roboto SemiBold */
+    font-size: 24px;
+}
+
+
+/* Estilos para los párrafos */
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Roboto Regular */
+    font-size: 16px;
+}
+
+li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
 /* Estilos para la barra de navegación */
 .navbar {
     background-color: #BB3232;
@@ -47,48 +80,6 @@ body {
 }
 
 
-/* Estilos para letras */
-h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700; /* Roboto Bold */
-    font-size: 48px;
-    color: #4f4f4f;
-}
-
-h2 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600; /* Roboto SemiBold */
-    font-size: 40px;
-}
-
-h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600; /* Roboto SemiBold */
-    font-size: 24px;
-}
-
-
-/* Estilos para los párrafos */
-p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400; /* Roboto Regular */
-    font-size: 16px;
-}
-
-li {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-}
-
-/* Estilo Secciones */
-.titulo-seccion {
-    background-color: #DAA520;
-}
-
-.titulo-seccion h2 {
-    color: #000;
-    padding: 10px;
-}
 
 /* CODIGO PARA BOTON DE WHATSAPP */
 .whatsapp-container {
@@ -132,6 +123,20 @@ li {
   }
   /* FIN DEL CÓDIGO PARA BOTÓN DE WHATSAPP*/
 
+
+
+  
+/* Estilo Secciones */
+.titulo-seccion {
+    background-color: #DAA520;
+}
+
+.titulo-seccion h2 {
+    color: #000;
+    padding: 10px;
+}
+
+
 /*NOSOTROS*/
 .nosotros {
     background-color: #EBECEC;
@@ -171,30 +176,26 @@ li {
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     margin-top: 20px;
 }
 
 .social-icons a {
     text-decoration: none;
-    color: #fff;
-    background-color: #333;
-    width: 40px;
-    height: 40px;
+    color: #BB3232; 
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .social-icons a:hover {
     transform: scale(1.2);
-    background-color: #DAA520;
+    color: #DAA520;
 }
 
 .social-icons i {
-    font-size: 20px;
+    font-size: 40px;
 }
 
 /* SERVICIOS */
@@ -303,6 +304,21 @@ li {
     }
 }
 
+
+/*CARRUSEL */
+
+.carrusel {
+    background-color: #EBECEC;
+    color: #4f4f4f;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel-izq {
+    padding-top: 100px;
+}
+
 /* SECCION CONTACTO */
 
 #contacto {
@@ -339,15 +355,14 @@ li {
 
 .payment-icons i {
     font-size: 20px; /* Puedes ajustar el tamaño del ícono */
-    background-color: #DAA520; /* Fondo amarillo */
-    color: #333; /* Color del ícono */
+    color: #BB3232; /* Color del ícono */
     width: 40px; /* Ajusta el tamaño del círculo */
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%; /* Hace el fondo circular */
-    border: 2px solid transparent; /* Sin borde o con borde transparente */
+    border: 2px solid ; /* Sin borde o con borde transparente */
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -358,9 +373,10 @@ li {
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
-    .navbar {
-        padding: 0%;
+    body {
+        overflow-x: hidden;
     }
+    
     /* Ocultar logos grandes en pantallas pequeñas */
     .logo-grande {
         display: none;
@@ -369,6 +385,10 @@ li {
     /* Mostrar logo pequeño en pantallas pequeñas */
     .logo-pequeno {
         display: inline-block;
+    }
+
+    .logo-carrusel {
+        display: none;
     }
 
     /* Estilos para los títulos */
@@ -412,5 +432,35 @@ li {
     .medios-pago {
         margin-top: 30px;
         margin-bottom: 30px;
+    }
+
+    /* Redes sociales - Nosotros y footer */
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .social-icons a {
+        text-decoration: none;
+        color: #BB3232; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+        transform: scale(1.2);
+        color: #DAA520;
+    }
+
+    .social-icons i {
+        font-size: 30px;
+    }
+
+    .carrusel-izq {
+        padding-top: 30px;
     }
 }

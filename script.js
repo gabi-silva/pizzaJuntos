@@ -1,21 +1,4 @@
-// Cierra el menú al hacer clic en cualquier enlace de navegación
-document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-  link.addEventListener('click', function() {
-    document.querySelector('.navbar-collapse').classList.remove('show');
-  });
-});
 
-// Cierra el menú al hacer clic en cualquier parte fuera del menú
-document.addEventListener('click', function(event) {
-  const navbarCollapse = document.querySelector('.navbar-collapse');
-  const isClickInside = navbarCollapse.contains(event.target);
-  const isMenuToggle = event.target.closest('.navbar-toggler');
-
-  // Si haces clic fuera del menú o vuelves a tocar el botón de menú
-  if (!isClickInside || isMenuToggle) {
-    navbarCollapse.classList.remove('show');
-  }
-});
 
 // Array de imágenes
 const images = [
