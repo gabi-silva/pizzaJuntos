@@ -353,13 +353,13 @@ li {
 .payment-icons i {
     font-size: 20px; /* Puedes ajustar el tamaño del ícono */
     color: #BB3232; /* Color del ícono */
-    width: 40px; /* Ajusta el tamaño del círculo */
-    height: 40px;
+    width: 50px; /* Ajusta el tamaño del círculo */
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%; /* Hace el fondo circular */
-    border: 2px solid ; /* Sin borde o con borde transparente */
+    border: 2px solid ;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -429,6 +429,25 @@ li {
     .medios-pago {
         margin-top: 30px;
         margin-bottom: 30px;
+    }
+
+    .payment-icons{
+        justify-content: flex-start;
+        margin-left: 10px !important;
+        padding-left: 0px !important;
+    }
+    
+    .payment-icons i {
+        font-size: 15px; /* Puedes ajustar el tamaño del ícono */
+        color: #BB3232; /* Color del ícono */
+        width: 30px; /* Ajusta el tamaño del círculo */
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%; /* Hace el fondo circular */
+        border: 2px solid ;
+        transition: transform 0.3s ease, background-color 0.3s ease;
     }
 
     /* Redes sociales - Nosotros y footer */
