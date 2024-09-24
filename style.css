@@ -316,6 +316,11 @@ li {
     border-radius: 15px;
 }
 
+/* TESTIMONIOS */
+#testimonios i{
+    color: #DAA520;
+}
+
 /* SECCION CONTACTO */
 
 #contacto {
