@@ -327,21 +327,12 @@ li {
     margin-bottom: 30px;
 }
 
-.form-container {
-    background-image: url('./img/servicios/opcion01.png'); /* Cambia la ruta por la imagen que quieras usar */
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 30px;
-    color: #fff; /* Cambia el color del texto si es necesario */
-}
-
 .medios-pago {
     border-radius: 20px;
 }
 
 .payment-icons {
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -353,6 +344,10 @@ li {
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.payment-icons a {
+    text-decoration: none;
 }
 
 .payment-icons i {
